@@ -10,15 +10,12 @@ let package = Package(
     products: [
         .library(
             name: "ZoomVideoSDK-iOS",
-            targets: ["ZoomVideoSDKScreenShare", "ZoomVideoSDK", "CptShare", "zoomcml", "zm_annoter_dynamic"]),
+            targets: ["ZoomVideoSDK", "CptShare", "zoomcml", "zm_annoter_dynamic"]),
     ],
     targets: [
         .binaryTarget(
                     name: "ZoomVideoSDK",
                     path: "ZoomVideoSDK.xcframework"),
-        .binaryTarget(
-                    name: "ZoomVideoSDKScreenShare",
-                    path: "ZoomVideoSDKScreenShare.xcframework"),
         .binaryTarget(
                     name: "CptShare",
                     path: "CptShare.xcframework"),
